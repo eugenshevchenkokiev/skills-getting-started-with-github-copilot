@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Schedule:</strong> ${details.schedule}</p>
           <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
           <p><strong>Participants:</strong></p>
-          <ul style="list-style: none; margin-left: 0; padding-left: 0; margin-bottom: 10px;">
-            ${details.participants.map(p => `<li style="margin-bottom: 5px;">${p} <span class="delete-participant" data-email="${p}" data-activity="${name}" style="color: red; cursor: pointer; margin-left: 10px; font-weight: bold;">&times;</span></li>`).join('')}
+          <ul>
+            ${details.participants.map(p => `<li>${p} <span class="delete-participant" data-email="${p}" data-activity="${name}">&times;</span></li>`).join('')}
           </ul>
         `;
 
